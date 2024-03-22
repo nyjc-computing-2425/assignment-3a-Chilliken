@@ -2,7 +2,7 @@ from re import T
 
 
 nric = input('Enter an NRIC number: ')
-validity = "invalid"
+
 # Type your code below
 prefix = nric[0]
 numbers = nric[1:8]
@@ -13,7 +13,7 @@ st_digit = "JZIHGFEDCBA"
 fg_digit = "XWUTRQPNMLK"
 invalidity = "NRIC is invalid."
 validity = "NRIC is valid."
-print(f"The input NRIC is {nric}.")
+
 if prefix not in first_letter:
     print(invalidity)
 elif len(nric) != 9:
